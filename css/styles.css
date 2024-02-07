@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #EFE3C9;
+    background-color: #FFF5EE;
     font-family: "PT Serif", sans-serif;
 }
 
@@ -17,11 +17,12 @@ body {
 
 nav div a {
     text-decoration: none;
-    color: #FCFAF6;
+    color: #355E3B;
 }
 
 nav div a:hover {
     color: #355E3B;
+    background-color: transparent;
 }
 
 .navbarLinks {
@@ -34,7 +35,7 @@ nav div a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #355E3B;
+    color: #023020;
     background-image: url("../img/laura-adai.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -55,6 +56,7 @@ h2 {
     font-weight: lighter;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
@@ -71,9 +73,79 @@ section p {
 
 }
 
-.projectCactiImage {
-    padding-left: 2rem;
+.projectImage {
+    margin-left: 1.2rem;
     width: 8rem;
+    height: 10rem;
     border-radius: 15px;
+}
+
+.trickyRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 5rem 1rem;
+}
+
+.trickyRow button {
+    background-color: #d3d3d3;
+    margin: 0.25rem;
+    border-radius: 15px;
+    border-color: #dbc1ac;
+    color: #38220f;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.trickyRow button:hover {
+    background-color: #8C8C8C;
+    border-radius: 15px;
+    border-color: #8C8C8C;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.projectCacti {
+    margin-left: 5rem;
+}
+
+.projectSucc {
+    margin-left: 17rem;
+}
+
+.projectKew {
+    margin-left: 5rem;
+}
+
+.projectPink {
+    margin-left: 17rem;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-decoration: none;
+    color: #023020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-family: "ui-sans-serif", sans-serif;
+    font-weight: bold;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #023020;
+}
+
+footer a:hover {
+
 }
 
