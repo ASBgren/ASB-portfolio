@@ -7,6 +7,10 @@ body {
     font-family: "PT Serif", sans-serif;
 }
 
+#home {
+    padding: 0.25rem;
+}
+
 .navbarLinks {
     text-decoration: none;
     font-family: Baskerville;
@@ -264,6 +268,7 @@ footer a:hover {
     padding-bottom: 0;
     text-align: center;
     padding-left: 2.5rem;
+    text-decoration: none;
 }
 
 .footerBackground {
@@ -303,6 +308,17 @@ footer {
         /*display: flex;*/
         /*justify-content: center;*/
         /*align-content: center;*/
+    }
+
+    #upArrow {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        color: #38220f;
+        width: 3rem;
+        height: 3rem;
+        font-size: 30pt;
+        padding-bottom: 1rem;
     }
 }
 
