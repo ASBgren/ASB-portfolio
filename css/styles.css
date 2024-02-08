@@ -9,9 +9,10 @@ body {
 
 .navbarLinks {
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: Baskerville;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    font-weight: normal;
 
 }
 
@@ -19,6 +20,7 @@ nav div a {
     text-decoration: none;
     color: #355E3B;
     padding: 0.25rem;
+    font-size: 1.25rem;
 }
 
 nav div a:hover {
@@ -30,7 +32,18 @@ nav div a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
+
+}
+
+#name {
+    font-family: Baskerville;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #097969;
+    font-style: italic;
+
 
 }
 
@@ -52,8 +65,13 @@ nav div a:hover {
 h1 {
     color: #355E3B;
     font-weight: lighter;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 5rem;
+    margin: 0;
+    font-size: 6rem;
+    text-align: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
 }
 
 h2 {
@@ -62,16 +80,23 @@ h2 {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
 
 h3 {
     color: #023020;
-    font-family: "ui-sans-serif", sans-serif;
+    font-family: Baskerville;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-size: 2rem;
+    font-weight: lighter;
+
 }
 #aboutMeId {
-    padding: 1rem;
+    padding: 3rem;
 }
 /*.aboutMeHead {*/
 /*    margin-top: 5rem;*/
@@ -80,12 +105,16 @@ h3 {
 .aboutMe p {
     font-family: "ui-sans-serif", sans-serif;
     color: #38220f;
-    /*padding: 2rem;*/
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 20rem;
+    font-size: 1.25rem;
+    text-align: center;
 
 }
 
@@ -96,9 +125,9 @@ h3 {
     /*background-size: 100rem;*/
 
 }
-.projects {
-    margin-bottom: 30rem;
-}
+/*.projects {*/
+/*    margin-bottom: 1rem;*/
+/*}*/
 
 #projectsId {
     padding: 1rem;
@@ -106,8 +135,8 @@ h3 {
 
 .projectImage {
     margin-left: 1.2rem;
-    width: 8rem;
-    height: 10rem;
+    width: 15rem;
+
     border-radius: 15px;
 }
 
@@ -121,19 +150,21 @@ h3 {
 }
 
 .trickyRow button {
-    background-color: #d3d3d3;
+    background-color: transparent;
     margin: 0.25rem;
     border-radius: 15px;
-    border-color: #dbc1ac;
+    border-color: rgb(219,193,172, 60%);
+    border-width: 2px;
     color: #38220f;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
 
 .trickyRow button:hover {
-    background-color: #8C8C8C;
+    background-color: #097969;
     border-radius: 15px;
-    border-color: #8C8C8C;
+    border-color: #097969;
     color: #ffffff;
     font-family: sans-serif;
 }
@@ -141,30 +172,32 @@ h3 {
 .projectCacti {
     display: flex;
     flex-direction: column;
-    padding-left: 6rem;
+    align-items: center;
+    /*padding-left: 6rem;*/
 
 }
 
 .projectFlow {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding-right: 6rem;
+    align-items: center;
+    /*padding-right: 6rem;*/
     justify-content: center;
 }
 
 .projectKew {
     display: flex;
     flex-direction: column;
-    padding-left: 6rem;
+    align-items: center;
+    /*padding-left: 6rem;*/
 
 }
 
 .projectPink {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding-right: 6rem;
+    align-items: center;
+    /*padding-right: 6rem;*/
 }
 
 .email {
@@ -200,6 +233,7 @@ footer a:hover {
     justify-content: center;
     font-size: 2rem;
     padding: 1rem;
+    text-align: center;
 
 }
 
@@ -207,21 +241,53 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     font-size: 1.5rem;
+    text-decoration: none;
+    color: #023020;
+
+}
+
+.email:hover {
+    font-weight: bold;
+    font-size: 1.75rem;
 }
 
 .contactSection {
-    margin-top: 10rem;
+    /*margin-top: 10rem;*/
 
 }
 
-.contact {
-    font-size: 8rem;
-    padding-top: 15rem;
+#contact {
+    font-size: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 0;
+    text-align: center;
+    padding-left: 2.5rem;
 }
 
 .footerBackground {
     /*padding-top: 1rem;*/
     background-color: #8A9A5B;;
 }
+
+footer {
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .navbarLinks {
+        display: flex;
+        flex-direction: row;
+
+    }
+    #contact {
+        font-size: 8rem;
+        padding-top: 10rem;
+        text-align: center;
+
