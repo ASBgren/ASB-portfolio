@@ -13,7 +13,7 @@ body {
 
 .navbarLinks {
     text-decoration: none;
-    font-family: Baskerville;
+    font-family: Baskerville, sans-serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-weight: normal;
@@ -37,18 +37,14 @@ nav div a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
-
 }
 
 #name {
-    font-family: Baskerville;
+    font-family: Baskerville, sans-serif;
     font-weight: lighter;
     font-size: 2rem;
     color: #097969;
     font-style: italic;
-
-
 }
 
 .hero {
@@ -64,6 +60,7 @@ nav div a:hover {
     padding: 10rem;
     opacity: 0.3;
     margin-bottom: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 h1 {
@@ -92,19 +89,18 @@ h2 {
 
 h3 {
     color: #023020;
-    font-family: Baskerville;
+    font-family: Baskerville, sans-serif;
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 2rem;
     font-weight: lighter;
 
 }
+
 #aboutMeId {
     padding: 3rem;
 }
-/*.aboutMeHead {*/
-/*    margin-top: 5rem;*/
-/*}*/
+
 
 .aboutMe p {
     font-family: "ui-sans-serif", sans-serif;
@@ -112,8 +108,6 @@ h3 {
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    /*align-items: center;*/
-    /*justify-content: center;*/
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 20rem;
@@ -126,12 +120,10 @@ h3 {
     background-image: url("../img/olga-thelavart-vS3idIiYxX0-unsplash copy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-size: 100rem;*/
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 
 }
-/*.projects {*/
-/*    margin-bottom: 1rem;*/
-/*}*/
+
 
 #projectsId {
     padding: 1rem;
@@ -140,8 +132,8 @@ h3 {
 .projectImage {
     margin-left: 1.2rem;
     width: 15rem;
-
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .trickyRow {
@@ -157,12 +149,13 @@ h3 {
     background-color: transparent;
     margin: 0.25rem;
     border-radius: 15px;
-    border-color: rgb(219,193,172, 60%);
+    border-color: rgb(219, 193, 172, 40%);
     border-width: 2px;
     color: #38220f;
     font-family: sans-serif;
     font-size: 1.5rem;
     padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .trickyRow button:hover {
@@ -178,8 +171,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     /*padding-left: 6rem;*/
-
 }
+
 
 .projectFlow {
     display: flex;
@@ -201,7 +194,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*padding-right: 6rem;*/
 }
 
 .email {
@@ -218,7 +210,6 @@ footer {
     font-size: 1rem;
     font-family: "ui-sans-serif", sans-serif;
     font-weight: bold;
-
 }
 
 footer a {
@@ -238,7 +229,6 @@ footer a:hover {
     font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
-
 }
 
 .email {
@@ -249,17 +239,11 @@ footer a:hover {
     font-size: 1.5rem;
     text-decoration: none;
     color: #023020;
-
 }
 
 .email:hover {
     font-weight: bold;
-    font-size: 1.75rem;
-}
-
-.contactSection {
-    /*margin-top: 10rem;*/
-
+    font-size: 1.5rem;
 }
 
 #contact {
@@ -271,19 +255,10 @@ footer a:hover {
     text-decoration: none;
 }
 
-/*#upArrow {*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*    color: #38220f;*/
-/*    width: 3rem;*/
-/*    height: 3rem;*/
-/*    font-size: 30pt;*/
-/*    padding-bottom: 1rem;*/
 
 .footerBackground {
-    /*padding-top: 1rem;*/
-    background-color: #8A9A5B;;
+    background-color: #8A9A5B;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 footer {
@@ -291,52 +266,66 @@ footer {
     font-size: 1.5rem;
     display: flex;
     justify-content: space-around;
-
 }
 
-@media screen and (min-width: 800px) {
-
-    .navbarLinks {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    #contact {
-        font-size: 8rem;
-        padding-top: 10rem;
-        text-align: center;
-    }
-
-    h1 {
-        color: #355E3B;
-        font-weight: lighter;
-        padding: 5rem;
-        margin: 0;
-        font-size: 6rem;
-        text-align: center;
-        /*display: flex;*/
-        /*justify-content: center;*/
-        /*align-content: center;*/
-    }
-
-    /*#upArrow {*/
-    /*    position: fixed;*/
-    /*    bottom: 0;*/
-    /*    right: 0;*/
-    /*    color: #38220f;*/
-    /*    width: 3rem;*/
-    /*    height: 3rem;*/
-    /*    font-size: 30pt;*/
-    /*    padding-bottom: 1rem;*/
-    /*}*/
-
-    .contactText {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        padding: 1rem;
-        text-align: center;
+#toTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border-color: rgb(2, 48, 32, 60%);
+    outline: #6a758a;
+    background-color: transparent;
+    color: #6a758a;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 3rem;
+    height: 2.5rem;
+    border-style: solid;
+    border-width: 2.5px;
 }
+
+    #toTopButton:hover {
+        background-color: rgb(0, 255, 127, 50%);
+
+    }
+
+    @media screen and (min-width: 800px) {
+
+        .navbarLinks {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        #contact {
+            font-size: 8rem;
+            padding-top: 10rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #355E3B;
+            font-weight: lighter;
+            padding: 5rem;
+            margin: 0;
+            font-size: 6rem;
+            text-align: center;
+            /*display: flex;*/
+            /*justify-content: center;*/
+            /*align-content: center;*/
+        }
+
+        .contactText {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+
 
