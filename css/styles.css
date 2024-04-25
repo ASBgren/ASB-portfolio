@@ -15,7 +15,6 @@ body {
     text-decoration: none;
     font-family: Baskerville, sans-serif;
     margin-top: 0.75rem;
-    /*margin-bottom: 3rem;*/
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     padding: 2rem;
@@ -23,16 +22,18 @@ body {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-nav div a {
+.navbarLinks a {
     text-decoration: none;
     color: #355E3B;
     padding: 0.25rem;
     font-size: 1.25rem;
 }
 
-nav div a:hover {
-    color: #355E3B;
-    background-color: transparent;
+.navbarLinks a:hover {
+    color: #023020;
+    /*background-color: transparent;*/
+    /*font-weight: bold;*/
+    font-size: 1.25rem;
 }
 
 .navbarLinks {
@@ -54,7 +55,6 @@ nav div a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*align-items: center;*/
     color: #023020;
     padding: 10rem;
     margin: 1.5rem;
@@ -64,13 +64,9 @@ nav div a:hover {
 h1 {
     color: #355E3B;
     font-weight: lighter;
-    /*padding: 5rem;*/
     margin: 0;
     font-size: 4rem;
     text-align: center;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-content: center;*/
 }
 
 h2 {
@@ -95,7 +91,7 @@ h3 {
 
 }
 
-#aboutMeId {
+#aboutMe {
     padding: 1rem;
 }
 
@@ -103,6 +99,7 @@ h3 {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
     margin: 1.5rem;
 }
+
 .aboutMe p {
     font-family: "ui-sans-serif", sans-serif;
     color: #38220f;
@@ -122,7 +119,7 @@ h3 {
 }
 
 
-#projectsId {
+#projects {
     padding: 1rem;
 }
 
@@ -282,7 +279,7 @@ footer {
     width: 3rem;
     height: 2.5rem;
     border-style: solid;
-    border-width: 2.5px;
+    border-width: 3px;
 }
 
     #toTopButton:hover {
@@ -295,7 +292,6 @@ footer {
         .navbarLinks {
             display: flex;
             flex-direction: row;
-
         }
 
         #contact {
