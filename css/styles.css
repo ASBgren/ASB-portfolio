@@ -125,7 +125,8 @@ h3 {
 
 .projectImage {
     margin-left: 1.2rem;
-    width: 15rem;
+    width: 45rem;
+    length: 30rem;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
